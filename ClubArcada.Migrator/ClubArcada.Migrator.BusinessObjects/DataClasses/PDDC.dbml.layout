@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 18, 22.25" name="PDDC">
+  <DataContextMoniker Name="/PDDCDataContext" />
+  <nestedChildShapes>
+    <classShape Id="62ec0cfc-7844-4885-a550-ac8a499eed0e" absoluteBounds="6.75, 0.75, 2, 1.7708968098958329">
+      <DataClassMoniker Name="/PDDCDataContext/Accounting" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d95acdd3-271c-445a-be87-e85f304ae99a" absoluteBounds="6.765, 1.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4c87ca2b-a517-4444-a31c-973836647f2a" absoluteBounds="6.75, 3.75, 2, 1.7708968098958327">
+      <DataClassMoniker Name="/PDDCDataContext/Wage" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4c03d727-419e-41e7-8d73-c5426dbf195b" absoluteBounds="6.765, 4.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f29af936-1460-4b10-9535-125aba2724d9" absoluteBounds="6.75, 6.75, 2, 1.9631982421875005">
+      <DataClassMoniker Name="/PDDCDataContext/AuditHistory" />
+      <nestedChildShapes>
+        <elementListCompartment Id="797c5d14-ed1d-485e-826f-c82c1fcf4468" absoluteBounds="6.765, 7.21, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="14e6a065-b773-4260-92bd-442be469e8f5" absoluteBounds="9.75, 0.75, 2, 2.5401025390625005">
+      <DataClassMoniker Name="/PDDCDataContext/Banner" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e4f6d2af-ce44-4c53-a481-9671d8c2e243" absoluteBounds="9.765, 1.21, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ab76fe6f-2e63-4851-a723-efd0e43c1956" absoluteBounds="0.75, 9.75, 2, 1.9631982421874987">
+      <DataClassMoniker Name="/PDDCDataContext/CashIn" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3e7d031a-2f6f-4e95-b2c5-bbafeacb8d12" absoluteBounds="0.765, 10.21, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="eb5cf32a-f5a8-4f23-8f4c-84a6e899c606" absoluteBounds="3.75, 9.75, 2, 3.1170068359375023">
+      <DataClassMoniker Name="/PDDCDataContext/CashResult" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ac004582-f94b-4d5d-ab0a-a01a137e5b5b" absoluteBounds="3.765, 10.21, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d5ae64c9-e1c0-49fd-bca0-631e341f2720" absoluteBounds="9.75, 4.75, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/PDDCDataContext/CashState" />
+      <nestedChildShapes>
+        <elementListCompartment Id="209548fc-f8cc-49c2-ae04-5e9248a92089" absoluteBounds="9.765, 5.21, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="84511366-e849-4f3b-b4e4-90f4365e9f3d" absoluteBounds="6.75, 9.75, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/PDDCDataContext/CashTable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f4589625-3e76-46f1-b741-ab1cb3f6b7ab" absoluteBounds="6.765, 10.21, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1d8fdece-d32a-4f4e-9249-74dd84ae5e9c" absoluteBounds="9.75, 8.75, 2, 1.7708968098958344">
+      <DataClassMoniker Name="/PDDCDataContext/Gallery" />
+      <nestedChildShapes>
+        <elementListCompartment Id="abeb21f9-ce33-4ba0-aed7-3cea7496a044" absoluteBounds="9.765, 9.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4a6e2fe5-af09-43c7-98e4-7ff1ee775a0d" absoluteBounds="9.75, 11.75, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/PDDCDataContext/League" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ed84a40a-8b63-4a14-b337-c50b16c429b2" absoluteBounds="9.765, 12.21, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="55d52e5c-6571-4429-867e-635ffffcd95c" absoluteBounds="12.75, 0.75, 2, 1.3862939453125003">
+      <DataClassMoniker Name="/PDDCDataContext/Login" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0432ecc1-7bf8-426e-b590-6e7ae1c865ec" absoluteBounds="12.765, 1.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9fb4b0f8-94c8-48d4-a149-37ab78966fa8" absoluteBounds="12.75, 3.75, 2, 2.347801106770834">
+      <DataClassMoniker Name="/PDDCDataContext/New" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e72ea98a-a673-4145-84c6-09e08c1e8dc9" absoluteBounds="12.765, 4.21, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f2468f1d-5189-421e-8646-7946f9937f53" absoluteBounds="12.75, 7.75, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/PDDCDataContext/Personal" />
+      <nestedChildShapes>
+        <elementListCompartment Id="62f5a81a-8879-4fc8-8eaf-ba24b954edce" absoluteBounds="12.765, 8.21, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="bae74b0e-d94b-44c7-acb1-501bc972c89c" absoluteBounds="12.75, 10.75, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/PDDCDataContext/Photo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="aadfd201-1fa5-4b6a-b97c-1661b2d17b09" absoluteBounds="12.765, 11.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f211a60f-13f2-4efd-8d56-d6a63a6fb462" absoluteBounds="0.75, 13.75, 2, 2.5401025390625005">
+      <DataClassMoniker Name="/PDDCDataContext/Request" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0391e731-fab1-4996-a0f7-2366afe6180f" absoluteBounds="0.765, 14.21, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d5da123e-76d3-4289-a9fa-91a37f7f3a7d" absoluteBounds="3.75, 13.75, 2, 1.3862939453124987">
+      <DataClassMoniker Name="/PDDCDataContext/Screenshot" />
+      <nestedChildShapes>
+        <elementListCompartment Id="bed984a9-7c66-4d88-9adc-afc6ae55f8d9" absoluteBounds="3.765, 14.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="440d9ed1-23f1-40a5-8819-8b3d22ef53a0" absoluteBounds="12.75, 13.75, 2, 2.5401025390625005">
+      <DataClassMoniker Name="/PDDCDataContext/StructureDetail" />
+      <nestedChildShapes>
+        <elementListCompartment Id="db2e7bdf-4213-4434-8d66-3eb93a2385cc" absoluteBounds="12.765, 14.21, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ff73b9d0-2825-456f-86b1-9fa0099050b0" absoluteBounds="6.75, 14.75, 2, 1.7708968098958344">
+      <DataClassMoniker Name="/PDDCDataContext/Structure" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2f8bf9df-dab2-40ee-ad5e-67d87ad663b4" absoluteBounds="6.765, 15.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9449a582-cfaf-41a0-aad0-bee7c5ccd91e" absoluteBounds="15.75, 0.75, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/PDDCDataContext/Tip" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f8c8754e-4575-4e4b-98fc-c62e498a8e57" absoluteBounds="15.765, 1.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5603e831-1e59-4e1b-adb2-e1647288d797" absoluteBounds="15.75, 3.75, 2, 5.6169254557291666">
+      <DataClassMoniker Name="/PDDCDataContext/TournamentCashout" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d66c7c76-af83-43e5-bdff-910422ee91db" absoluteBounds="15.765, 4.21, 1.9700000000000002, 5.0569254557291661" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="884aefaf-61ae-4bcc-b7b8-6997513f2ea8" absoluteBounds="15.75, 10.75, 2, 5.2323225911458309">
+      <DataClassMoniker Name="/PDDCDataContext/TournamentDetail" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5d9e14bd-ae67-48bd-a570-36ff82c45d95" absoluteBounds="15.765, 11.21, 1.9700000000000002, 4.672322591145833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5d055bde-ca75-4776-8951-636dd60cc657" absoluteBounds="15.75, 16.75, 2, 4.2708154296875023">
+      <DataClassMoniker Name="/PDDCDataContext/TournamentResult" />
+      <nestedChildShapes>
+        <elementListCompartment Id="560ebb52-a3eb-46f6-b4c1-27ec6661de13" absoluteBounds="15.765, 17.21, 1.9700000000000002, 3.7108154296875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8c05a074-4159-4dd1-a37f-401e2af4ac6e" absoluteBounds="0.75, 17.75, 2, 3.6939111328125023">
+      <DataClassMoniker Name="/PDDCDataContext/Tournament" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3d66437c-e103-4c8b-b8c8-432c2a510924" absoluteBounds="0.765, 18.21, 1.9700000000000002, 3.1339111328125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f3197693-a8e5-45b3-8e03-bb90b6416ad6" absoluteBounds="3.75, 17.75, 2, 1.9631982421875023">
+      <DataClassMoniker Name="/PDDCDataContext/TournamentStat" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e295bef3-d022-46de-b4d0-ea88ddb5f800" absoluteBounds="3.765, 18.21, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="77a27ec6-469f-4d44-b15a-98b2afe10135" absoluteBounds="6.75, 17.75, 2, 4.2708154296875023">
+      <DataClassMoniker Name="/PDDCDataContext/TournamentTemplate" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4fc9da88-6856-48df-8265-f996cb4eb43a" absoluteBounds="6.765, 18.21, 1.9700000000000002, 3.7108154296875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7bba4668-4188-46e5-b8e8-a8f55dd6ce29" absoluteBounds="3.5, 5, 2, 3.5016097005208326">
+      <DataClassMoniker Name="/PDDCDataContext/Transaction" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8489bf35-5790-4ae7-b114-90acefcbdc1a" absoluteBounds="3.515, 5.46, 1.9700000000000002, 2.941609700520833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e7ac24e2-8245-4098-abc7-1248276a0ef5" absoluteBounds="3.5, 1.25, 2, 3.1170068359375005">
+      <DataClassMoniker Name="/PDDCDataContext/UserRole" />
+      <nestedChildShapes>
+        <elementListCompartment Id="36b0a482-cc48-4e15-a68a-f23e02d4b742" absoluteBounds="3.515, 1.71, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f407424c-b7c8-45b3-9766-a3624624a684" absoluteBounds="0.75, 2.5, 2, 4.8477197265624987">
+      <DataClassMoniker Name="/PDDCDataContext/User" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ceb8e7b7-9397-4369-abe5-362bdf628598" absoluteBounds="0.765, 2.96, 1.9700000000000002, 4.2877197265625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7980272e-95b3-45e1-a48c-149f1b23cce5" absoluteBounds="9.75, 17.75, 2, 1.7708968098958309">
+      <DataClassMoniker Name="/PDDCDataContext/UserSetting" />
+      <nestedChildShapes>
+        <elementListCompartment Id="82c87004-aa6d-4da6-a370-53cfc54e6738" absoluteBounds="9.765, 18.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 6.17385986328125); (3.5 : 6.17385986328125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/PDDCDataContext/User/User_Transaction" />
+      <nodes>
+        <classShapeMoniker Id="f407424c-b7c8-45b3-9766-a3624624a684" />
+        <classShapeMoniker Id="7bba4668-4188-46e5-b8e8-a8f55dd6ce29" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 3.43350341796875); (3.5 : 3.43350341796875)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/PDDCDataContext/User/User_UserRole" />
+      <nodes>
+        <classShapeMoniker Id="f407424c-b7c8-45b3-9766-a3624624a684" />
+        <classShapeMoniker Id="e7ac24e2-8245-4098-abc7-1248276a0ef5" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
