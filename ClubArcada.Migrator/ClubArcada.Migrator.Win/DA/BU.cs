@@ -27,19 +27,19 @@ namespace ClubArcada.Migrator.Win.DA
                 {
                     Id = u.UserId,
                     AdminLevel = u.AdminLevel,
-                    AutoReturnType = 0,
+                    AutoReturnType = u.IsAutoReturn.True() ? 1 : 0,
                     CreatedByUserId = new Guid(ConfigurationManager.AppSettings["PeterVargaUserId"]),
                     DateCreated = u.DateCreated,
-                    Email = u.Email,
+                    Email = u.Email.Trim(),
                     FirstName = u.FirstName,
                     IsAdmin = u.IsAdmin,
                     IsBlocked = u.IsBlocked,
                     IsPersonal = u.IsPersonal,
                     IsTestUser = u.FirstName.ToLower().Contains("test"),
                     IsWallet = u.IsWallet.True(),
-                    LastName = u.LastName,
-                    NickName = u.NickName,
-                    Password = u.Password,
+                    LastName = u.LastName.Trim(),
+                    NickName = u.NickName.Trim(),
+                    Password = u.Password.Trim(),
                     PhoneNumber = u.PhoneNumber
                 };
 
@@ -61,13 +61,13 @@ namespace ClubArcada.Migrator.Win.DA
                     DateCompleted = u.DateCompleted,
                     DateCreated = u.DateCreated,
                     DateDeleted = u.DateDeleted,
-                    Description = u.Description,
+                    Description = u.Description.Trim(),
                     Status = u.Status,
                     UserId = u.UserId
                 };
 
                 ClubArcada.Common.BusinessObjects.Data.RequestData.Create(CR, newReq);
-                Console.WriteLine(u.Description + " synced");
+                Console.WriteLine(newReq.Description + " synced");
             }
         }
     }
