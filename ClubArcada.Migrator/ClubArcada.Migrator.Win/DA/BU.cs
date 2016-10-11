@@ -70,5 +70,57 @@ namespace ClubArcada.Migrator.Win.DA
                 Console.WriteLine(newReq.Description + " synced");
             }
         }
+
+        public static void SynTournaments()
+        {
+            var oldTours = BusinessObjects.DataClasses.UserDA.GetTournaments();
+
+
+            foreach (var u in oldTours)
+            {
+                var newReq = new Tournament()
+                {
+                    Id = u.TournamentId,
+                    Date = u.Date,
+                    DateCreated = u.DateCreated,
+                    DateDeleted = u.DateDeleted,
+                    DateEnded = u.DateEnded.Value,
+                    Description = u.Description,
+                    Name = u.Name,
+                    LeagueId = u.LeagueId,
+                    IsLeague = u.Detail.IsLeague,
+                    IsFullPointed = u.Detail.IsFullPointed,
+                    IsFood =u.Detail.IsFood,
+                    IsHidden = u.IsHidden.True(),
+                    IsPercentageBonus = u.Detail.IsPercentageBonus,
+                    IsRunning = u.IsRunning.True(),
+                    
+                    BountyDesc = u.Detail.BountyDesc,
+                    BuyInPrize = u.Detail.BuyInPrize,
+                    BuyInStack = u.Detail.BuyInStack,
+                    CreatedByUserId = u.CreatedByUserId,
+
+                    FullStackBonus = u.Detail.FullStackBonus.HasValue ? u.Detail.FullStackBonus.Value : 0,
+                    GameType = u.GameType, //TODO Char to enum
+                    GTD = u.Detail.GTD.HasValue ? u.Detail.GTD.Value : 0,
+                    LogicType = 0,
+                    ReBuyCount = u.Detail.ReBuyCount.HasValue ? u.Detail.ReBuyCount.Value :0,
+                    RebuyPrize = u.Detail.ReBuyPrize,
+                    RebuyStack = u.Detail.ReBuyStack,
+                    StructureId = u.Detail.StructureId,
+                    SpecialAddonPrize = u.Detail.SpecialAddonPrize.HasValue ? u.Detail.SpecialAddonPrize.Value :0,
+                    SpecialAddonStack = u.Detail.SpecialAddonStack.HasValue ? u.Detail.SpecialAddonStack.Value :0,
+                    
+
+                    AddOnPrize = u.Detail.AddOnPrize,
+                    AddOnStack = u.Detail.AddOnStack,
+                    BonusStack = u.Detail.BonusStack,
+                    
+                };
+
+                ClubArcada.Common.BusinessObjects.Data.TournamentData.Save(CR, newReq);
+                Console.WriteLine(newReq.Name + " synced");
+            }
+        }
     }
 }

@@ -24,5 +24,25 @@ namespace ClubArcada.Migrator.BusinessObjects.DataClasses
                 return appDC.Requests.ToList();
             }
         }
+
+        public static List<Tournament> GetTournaments()
+        {
+            using (var appDC = new PDDCDataContext(ConfigurationManager.AppSettings["OldDB"]))
+            {
+                var tours = appDC.Tournaments.ToList();
+
+                foreach(var t in tours)
+                {
+                    t.Detail = appDC.TournamentDetails.SingleOrDefault(td => td.TournamentId == t.TournamentId);
+                }
+
+                return tours;
+            }
+        }
+    }
+
+    public partial class Tournament
+    {
+        public TournamentDetail Detail { get; set; }
     }
 }
