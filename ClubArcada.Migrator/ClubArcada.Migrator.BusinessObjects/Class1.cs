@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace ClubArcada.Migrator.BusinessObjects
 {
-    public class Class1
+    public static class Class1
     {
+        
     }
 }

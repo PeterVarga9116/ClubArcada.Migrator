@@ -10,9 +10,7 @@ namespace ClubArcada.Migrator.Win
     {
         static void Main(string[] args)
         {
-            DA.BU.SyncRequests();
-
-            DA.BU.SyncUsers();
+            DA.BU.SynTournaments();
         }
     }
 }

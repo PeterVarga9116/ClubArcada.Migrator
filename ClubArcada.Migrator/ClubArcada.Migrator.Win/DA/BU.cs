@@ -2,6 +2,9 @@
 using ClubArcada.Common.BusinessObjects.DataClasses;
 using System.Configuration;
 using ClubArcada.Common;
+using System.Linq;
+using ClubArcada.Common.BusinessObjects;
+
 
 namespace ClubArcada.Migrator.Win.DA
 {
@@ -75,8 +78,9 @@ namespace ClubArcada.Migrator.Win.DA
         {
             var oldTours = BusinessObjects.DataClasses.UserDA.GetTournaments();
 
+            var filtered = oldTours.Where(t => !t.DateDeleted.HasValue && t.Detail.IsNotNull()).ToList();
 
-            foreach (var u in oldTours)
+            foreach (var u in filtered)
             {
                 var newReq = new Tournament()
                 {
@@ -84,8 +88,8 @@ namespace ClubArcada.Migrator.Win.DA
                     Date = u.Date,
                     DateCreated = u.DateCreated,
                     DateDeleted = u.DateDeleted,
-                    DateEnded = u.DateEnded.Value,
-                    Description = u.Description,
+                    DateEnded = u.DateEnded.HasValue ? u.DateEnded.Value : DateTime.Now.AddYears(-1),
+                    Description = u.Description.IsNullOrEmpty() ? string.Empty : u.Description,
                     Name = u.Name,
                     LeagueId = u.LeagueId,
                     IsLeague = u.Detail.IsLeague,
@@ -95,13 +99,13 @@ namespace ClubArcada.Migrator.Win.DA
                     IsPercentageBonus = u.Detail.IsPercentageBonus,
                     IsRunning = u.IsRunning.True(),
                     
-                    BountyDesc = u.Detail.BountyDesc,
+                    BountyDesc = u.Detail.BountyDesc.IsNullOrEmpty() ? string.Empty : u.Detail.BountyDesc,
                     BuyInPrize = u.Detail.BuyInPrize,
                     BuyInStack = u.Detail.BuyInStack,
                     CreatedByUserId = u.CreatedByUserId,
 
                     FullStackBonus = u.Detail.FullStackBonus.HasValue ? u.Detail.FullStackBonus.Value : 0,
-                    GameType = u.GameType, //TODO Char to enum
+                    GameType = (int)u.GameType.ToGameType(),
                     GTD = u.Detail.GTD.HasValue ? u.Detail.GTD.Value : 0,
                     LogicType = 0,
                     ReBuyCount = u.Detail.ReBuyCount.HasValue ? u.Detail.ReBuyCount.Value :0,
@@ -120,6 +124,56 @@ namespace ClubArcada.Migrator.Win.DA
 
                 ClubArcada.Common.BusinessObjects.Data.TournamentData.Save(CR, newReq);
                 Console.WriteLine(newReq.Name + " synced");
+            }
+        }
+    }
+
+
+
+    public static class Ext
+    {
+        public static eGameType ToGameType(this char gametypeChar)
+        {
+            switch (gametypeChar)
+            {
+                case 'X':
+                    return eGameType.NotSet;
+
+                case 'F':
+                    return eGameType.FreezeOut;
+
+                case 'R':
+                    return eGameType.RebuyUnlimited;
+
+                case 'D':
+                    return eGameType.DoubleChance;
+
+                case 'T':
+                    return eGameType.TripleChance;
+
+                case 'C':
+                    return eGameType.CashGame;
+
+                case 'E':
+                    return eGameType.Freeroll;
+
+                case 'L':
+                    return eGameType.RebuyLimited;
+
+                case 'A':
+                    return eGameType.DoubleTrouble;
+
+                case 'Y':
+                    return eGameType.Final;
+
+                case 'Q':
+                    return eGameType.Qualification;
+
+                case 'Z':
+                    return eGameType.QualFinal;
+
+                default:
+                    return eGameType.NotSet;
             }
         }
     }

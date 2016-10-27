@@ -40,9 +40,4 @@ namespace ClubArcada.Migrator.BusinessObjects.DataClasses
             }
         }
     }
-
-    public partial class Tournament
-    {
-        public TournamentDetail Detail { get; set; }
-    }
 }
